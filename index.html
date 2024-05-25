@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Name</h1>
+        <h2>Here we use name array and console all name one by one respectively <br>
+        kindly check in console...</h2>
+    </div>
+
+    <script>
+        var arr = ["Ali", "Ahmed", "Zamam", "Sani", "Hai"];
+        var index = 0;
+
+let intervalId = setInterval(() => {
+    console.log(arr[index]);
+    index++;
+    if (index === arr.length) {
+        index = 0
+        // clearInterval(intervalId);
+    }
+}, 1000); // 10000 milliseconds = 10 seconds
+
+    </script>
+</body>
+</html>
